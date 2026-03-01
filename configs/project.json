@@ -1,0 +1,15 @@
+{
+  "profile_name": "project",
+  "source": "",
+  "output_prefix": "ucm",
+  "notes": "Full UCM project merge",
+  "max_file_size_kb": 500,
+  "max_depth": null,
+  "extra_whitelist_ext": [],
+  "extra_blacklist_dirs": [
+    "configs/base"
+  ],
+  "extra_blacklist_files": [],
+  "extra_blacklist_patterns": [],
+  "whitelist_files": []
+}
