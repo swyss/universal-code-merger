@@ -1,56 +1,23 @@
 {
-  "_comment": "universal-code-merger v2 -- Global base configuration",
+  "_comment": "Global defaults — overridden by profile.json > .env > CLI",
   "output_dir": "outputs",
-  "config_dir": "configs",
   "log_dir": "logs",
-  "timestamp_format": "%Y-%m-%d_%H-%M-%S",
   "encoding": "utf-8",
+  "timestamp_format": "%Y-%m-%d_%H-%M-%S",
   "max_file_size_kb": 500,
   "max_depth": null,
   "dry_run": false,
   "warn_on_secrets": true,
-  "global_whitelist_ext": [
-    ".py",
-    ".ts",
-    ".js",
-    ".vue",
-    ".json",
-    ".toml",
-    ".yml",
-    ".yaml",
-    ".xml",
-    ".html",
-    ".css",
-    ".md",
-    ".txt",
-    ".env",
-    ".config"
+  "whitelist_ext": [
+    ".py", ".ts", ".js", ".vue",
+    ".json", ".toml", ".yml", ".yaml",
+    ".xml", ".html", ".css",
+    ".md", ".txt", ".env", ".config"
   ],
-  "global_blacklist_dirs": [
-    "node_modules",
-    "__pycache__",
-    ".git",
-    ".idea",
-    ".venv",
-    "venv",
-    "env",
-    "dist",
-    "build",
-    "outputs",
-    "logs",
-    "configs"
+  "blacklist_dirs": [
+    "node_modules", "__pycache__", ".git", ".idea",
+    ".venv", "venv", "dist", "build", "outputs", "logs"
   ],
-  "global_blacklist_files": [
-    "*.pyc",
-    "*.pyo",
-    "*.pyd",
-    "*.egg-info",
-    "*.log",
-    ".DS_Store",
-    "Thumbs.db"
-  ],
-  "global_blacklist_patterns": [
-    "*.min.js",
-    "*.min.css"
-  ]
+  "blacklist_files": [],
+  "blacklist_patterns": []
 }
